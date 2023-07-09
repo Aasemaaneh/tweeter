@@ -1,0 +1,18 @@
+nav {
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5em;
+}
+
+nav span {
+  font-family: 'Bungee', sans-serif;
+}
+
+nav .fas.fa-angle-double-down {
+  color: red;
+  margin-top: 5px;
+}

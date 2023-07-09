@@ -1,0 +1,71 @@
+.new-tweet {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.new-tweet h2 {
+  margin-bottom: 20px;
+}
+
+.new-tweet form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-tweet label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.new-tweet textarea {
+  height: 100px;
+  resize: none;
+  border: 1px solid #2e2921;
+  padding: 5px;
+  width: 80%;
+  background-color: #f4f1ec;
+}
+
+.new-tweet textarea:focus {
+  outline: none;
+  border-color: #4056A1;
+}
+
+.new-tweet button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.new-tweet button:hover {
+  background-color: #24457f;
+}
+
+.new-tweet .counter {
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  align-self: flex-end;
+  color: #1d1c29;
+}
+
+.new-tweet .counter.invalid {
+  color: red;
+}
+
+
+.new-tweet div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #2e2921;
+}
