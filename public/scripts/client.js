@@ -17,12 +17,12 @@ const createTweetElement = (tweet) => {
     const article = $('<article class="tweet">');
      
     article.append(`<header>
-      <h3>
+      
       <div class="user-info">
       <img src="${tweet.user.avatars}" alt="Profile Picture"></img>
-      <h4 class="user-name">${tweet.user.name}</h4>
+      <h2 class="user-name">${tweet.user.name}</h2>
       <p class="user-handle">${tweet.user.handle}</p>
-      </div></h3>
+      </div>
       </header>
       <div class="tweet-content">
         <p>${tweet.content.text}</p>

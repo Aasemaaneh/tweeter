@@ -25,64 +25,48 @@ header h2 {
   color: #333333;
 }
 
-header h3 {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f4f1ec;;
-}
-
-  
-header h3 img {
-  width: 35px;
-  height: 35px;
-  margin-left: 10px;
-  object-fit: cover;
-  border-radius: 50%;
-  align-items: left;
-}
-
-header h3 h4 {
- padding-top: 20px;
-  font-size: 24px;
-  color: #333333;
-  align-items:left ;
-}
 
 
 @media only screen and (min-width: 768px) {
   header {
-    height: 500px;
+    
+    height: 50% ;
+    width: 33.3%;
+    float : left;
   }
-
-  header h2 {
-    font-size: 36px;
+}
+@media screen and (max-width: 1024px) {
+  header {
+    width: 100%;
+    float: none;
+    font-size: 24px;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 10 5em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   header img {
-    width: 300px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin to separate header from the .new-tweet container */
+  }
+
+  
+
+  header h2 {
+    text-align: center;
+  }
+
+  .new-tweet {
+    margin-top: 0; /* Reset margin-top for .new-tweet container */
   }
 }
-  @media screen and (max-width: 1024px) {
-    .profile-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
 
-    .profile-pic {
-      width: 20rem;
-      margin-top: -17rem;
-    }
-
-    h2 {
-      text-align: center;
-    }
-  }
 
   /* Media query for screens with width greater than 2048px */
   @media only screen and (min-width: 1024px) {

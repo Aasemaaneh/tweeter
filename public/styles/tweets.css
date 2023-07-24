@@ -3,65 +3,78 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding : 5px;
+  padding: 5px;
   width: 80%;
+  height : 180px;
 }
-
 
 .tweet {
   border: 1px solid #2e2727;
   padding: 0;
   margin-bottom: 20px;
   position: relative;
-  
+  height : 150px;
 }
-
 
 .tweet header {
   display: flex;
-  height: 40px; /* Adjust this value to set the desired height */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #f4f1ec;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  align-items:stretch;
+  justify-content: flex-end;
 }
 
 .tweet header img {
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  object-fit: contain;
   border-radius: 50%;
-  margin-right: 20px;
+  text-align: left;
 }
 
 .tweet header .user-info {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .tweet header .user-info .user-name {
-  position: absolute;
-  top: 0;
-  left: 50px; /* Adjust this value to align the username properly */
-  margin: 0;
-  font-size: 16px;
+  font-size: 14px;
+  color: #000000;
 }
 
-.tweet header .user-info .user-handle {
-  margin: 0;
-  font-size: 14px;
-  color: #888;
-  align-self: flex-start;
-  position: absolute;
-  top: 0;
-  right: 0;
+.tweet header .user-info p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  margin-left: auto;
 }
 
 .tweet-content p {
   margin: 0;
+  height : 120px;
+  max-width:max-content;
+  align-content: normal;
 }
 
 .tweet footer {
   display: flex;
-  justify-content: space-between; /* Align items to the ends */
-  align-items: center;
-  margin-top: 10px;
-  position: relative; /* Add positioning context */
+  justify-content: space-between; 
+  position: relative; 
+  align-items: baseline;
 }
 
 .tweet footer::before {
@@ -76,18 +89,15 @@
 
 .tweet footer .icon-container {
   display: flex;
-  align-items: center;
+  align-items:end;
   margin-left: auto; /* Align icon to the right */
-  content: "\f079"; /* Unicode for the retweet icon */
-  font-family: "Font Awesome 5 Free"; /* Font Awesome font family */
 }
 
 .tweet footer .icon-container i {
   margin-left: 10px;
   color: #888;
-  content: "\f079"; /* Unicode for the retweet icon */
-  font-family: "Font Awesome 6 Free"; /* Font Awesome font family */
 }
+
 .tweet footer .timestamp {
   position: absolute;
   bottom: 0;
@@ -96,10 +106,24 @@
   font-size: 12px;
   color: #888;
 }
+
+
 .tweet:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Apply box shadow on hover */
 }
 
 .tweet:hover footer .icon-container i {
   color: #4056A1; /* Change icon color on hover */
+}
+@media only screen and (min-width: 1024px) {
+
+  .tweet-container {
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+    height : 180px;
+  }
+
 }

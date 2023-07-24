@@ -1,10 +1,9 @@
 .new-tweet {
   text-align: center;
-  margin-top: 20px;
 }
 
 .new-tweet h2 {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .new-tweet form {
@@ -19,13 +18,14 @@
 }
 
 .new-tweet textarea {
-  height: 100px;
-  resize: none;
-  border: 1px solid #2e2921;
-  padding: 5px;
-  width: 80%;
+  height: 50px;
+  resize:both;
+  border: 0; 
+  border-bottom: 2px solid #2e2921;
+  width: 96%;
   background-color: #f4f1ec;
 }
+
 
 .new-tweet textarea:focus {
   outline: none;
