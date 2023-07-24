@@ -1,0 +1,105 @@
+.tweet-container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding : 5px;
+  width: 80%;
+}
+
+
+.tweet {
+  border: 1px solid #2e2727;
+  padding: 0;
+  margin-bottom: 20px;
+  position: relative;
+  
+}
+
+
+.tweet header {
+  display: flex;
+  height: 40px; /* Adjust this value to set the desired height */
+}
+
+.tweet header img {
+ 
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.tweet header .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tweet header .user-info .user-name {
+  position: absolute;
+  top: 0;
+  left: 50px; /* Adjust this value to align the username properly */
+  margin: 0;
+  font-size: 16px;
+}
+
+.tweet header .user-info .user-handle {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+  align-self: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tweet-content p {
+  margin: 0;
+}
+
+.tweet footer {
+  display: flex;
+  justify-content: space-between; /* Align items to the ends */
+  align-items: center;
+  margin-top: 10px;
+  position: relative; /* Add positioning context */
+}
+
+.tweet footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  border-top: 1px solid #2e2727; /* Add top border */
+}
+
+.tweet footer .icon-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Align icon to the right */
+  content: "\f079"; /* Unicode for the retweet icon */
+  font-family: "Font Awesome 5 Free"; /* Font Awesome font family */
+}
+
+.tweet footer .icon-container i {
+  margin-left: 10px;
+  color: #888;
+  content: "\f079"; /* Unicode for the retweet icon */
+  font-family: "Font Awesome 6 Free"; /* Font Awesome font family */
+}
+.tweet footer .timestamp {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #888;
+}
+.tweet:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Apply box shadow on hover */
+}
+
+.tweet:hover footer .icon-container i {
+  color: #4056A1; /* Change icon color on hover */
+}

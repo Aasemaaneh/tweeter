@@ -5,8 +5,10 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #F6F6F6; 
+  background-color: #fbff00b4; 
   background-image: url('path/to/your/image.png');
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  
 }
 
   
@@ -22,3 +24,97 @@ header h2 {
   font-size: 24px;
   color: #333333;
 }
+
+header h3 {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f4f1ec;;
+}
+
+  
+header h3 img {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  align-items: left;
+}
+
+header h3 h4 {
+ padding-top: 20px;
+  font-size: 24px;
+  color: #333333;
+  align-items:left ;
+}
+
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 500px;
+  }
+
+  header h2 {
+    font-size: 36px;
+  }
+
+  header img {
+    width: 300px;
+    height: 300px;
+  }
+}
+  @media screen and (max-width: 1024px) {
+    .profile-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-pic {
+      width: 20rem;
+      margin-top: -17rem;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  /* Media query for screens with width greater than 2048px */
+  @media only screen and (min-width: 1024px) {
+
+
+    .profile-pic {
+      width: 20rem;
+      margin-top: -200px;
+      align-self: center;
+    }
+
+    .profile-header-background {
+      display: none;
+    }
+  
+    .header-content {
+      width: 80%;
+      margin-left: 100px;
+      margin-top: 300px;
+      }
+
+    .profile-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: #cdd7f7;
+      width: 50rem;
+      height: 20rem;
+      border-radius: 10px;
+    }
+
+    h2 {
+      align-self: center;
+    }
+   }

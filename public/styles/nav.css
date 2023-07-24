@@ -13,6 +13,18 @@ nav span {
 }
 
 nav .fas.fa-angle-double-down {
-  color: red;
+  color: rgba(124, 7, 7, 0.945);
   margin-top: 5px;
+  align-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    height: 80px;
+    background-color: #cdd7f7;
+  }
+
+  nav .nav-content {
+    display: flex;
+  }
 }

@@ -58,7 +58,6 @@
   color: red;
 }
 
-
 .new-tweet div {
   display: flex;
   align-items: center;
@@ -68,4 +67,31 @@
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #2e2921;
+}
+
+.error-message {
+  color: red;
+  font-size: 20px;
+  margin-top: 5px;
+  border-color: red;
+  align-items: center;
+  border-style: dashed;
+}
+
+@media only screen and (min-width: 768px) {
+  .new-tweet {
+    margin-top: 40px;
+  }
+
+  .new-tweet textarea {
+    width: 60%;
+  }
+
+  .new-tweet button {
+    align-self: center;
+  }
+
+  .new-tweet .counter {
+    font-size: 18px;
+  }
 }

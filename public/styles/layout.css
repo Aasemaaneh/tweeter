@@ -33,3 +33,22 @@ body {
 nav .logo {
   font-family: 'Bungee', sans-serif;
 }
+@media (min-width: 1024px) {
+  main {
+    margin-top: 0;
+    flex-direction: row;
+    gap: 100px;
+    padding: 0 1.5em;
+  }
+}
+@media (min-width: 1440px) {
+  main {
+    max-width: 1368px;
+    padding: 0;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
