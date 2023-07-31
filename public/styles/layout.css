@@ -14,21 +14,27 @@
  * Global layout stuff
  */
  main {
-  width: 98%;
-  margin: 0 auto;
+  
   background-color: #f4f1ec;
   display: flex;
-  flex-direction:column;
-
+  flex-direction: column; /* Change flex-direction to column */
+  justify-content: center;
+  align-items: flex-start;
 }
 
 
 body {
+  display: flex;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  
+ 
 }
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
@@ -43,18 +49,12 @@ nav .logo {
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px)  { 
  
   main {
-      height: 120%;
-      width: 60%;
-      float: right;
-      font-size: 24px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; /* Add this line to center the header content horizontally */
+    margin-top: 8%;
+    flex-direction: row; 
+      
     }
   
-
- 
 }

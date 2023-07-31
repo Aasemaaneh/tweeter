@@ -1,30 +1,22 @@
 nav {
   height: 120px;
-  background-color: #4056A1;
   color: #FFFFFF;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5em;
+  background-color: #ffae00b4; 
+  background-image: url('path/to/your/image.png');
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
 }
 
 nav span {
   font-family: 'Bungee', sans-serif;
+  font-size: 24px;
+  justify-content: space-between;
 }
 
 nav .fas.fa-angle-double-down {
   color: rgba(124, 7, 7, 0.945);
   margin-top: 5px;
-  align-self: center;
 }
 
-@media screen and (min-width: 1024px) {
-  nav {
-    height: 80px;
-    background-color: #cdd7f7;
-  }
-
-  nav .nav-content {
-    display: flex;
-  }
-}

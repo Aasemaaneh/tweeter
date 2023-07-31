@@ -17,26 +17,24 @@ const createTweetElement = (tweet) => {
     const article = $('<article class="tweet">');
      
     article.append(`<header>
-      
-      <div class="user-info">
-      <img src="${tweet.user.avatars}" alt="Profile Picture"></img>
-      <h2 class="user-name">${tweet.user.name}</h2>
-      <p class="user-handle">${tweet.user.handle}</p>
-      </div>
-      </header>
-      <div class="tweet-content">
-        <p>${tweet.content.text}</p>
-      </div>
-      <footer>
-      <div class="icon-container">
-      <i class="far fa-flag"></i>
-      <i class="fa-solid fa-retweet"></i>
-      <i class="far fa-heart"></i>
-      
-      </div>
-      <span class="timestamp">${timeElapsed} ago</span> <!-- Add timestamp text -->
-      </footer>
-      </article>`);
+            <img src="${tweet.user.avatars}" alt="Profile Picture">
+            <div class="user-info">
+              <h2 class="user-name">${tweet.user.name}</h2>
+              <p class="user-handle">${tweet.user.handle}</p>
+            </div>
+          </header>
+          <div class="tweet-content">
+            <p>${tweet.content.text}</p>
+          </div>
+          <footer>
+            <div class="icon-container">
+              <i class="far fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="far fa-heart"></i>
+            </div>
+            <span class="timestamp">${timeElapsed} ago</span> <!-- Add timestamp text -->
+          </footer>
+        </article>`);
   
     return article;
   };
