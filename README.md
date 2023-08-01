@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-[Screenshot of the app](https://github.com/Aasemaaneh/tweeter/blob/2a3ce924ac1ad06fc2a723d4087346564c400127/doc/tweeter4.png)
+![Screenshot of the app](https://github.com/Aasemaaneh/tweeter/blob/2a3ce924ac1ad06fc2a723d4087346564c400127/doc/tweeter4.png)
 
 ## Table of Contents
 
@@ -60,7 +60,4 @@ The server will start, and you can access the application by visiting http://loc
 - View a feed of posted tweets.
 - Responsive design for wide screen sizes.
 
-## Contributing
-
-Contributions to the Tweeter project are welcome! If you find any bugs or have suggestions for improvements, please create an issue or submit a pull request.
 
