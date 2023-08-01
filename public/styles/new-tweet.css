@@ -1,10 +1,11 @@
 .main-content {
+
   display: flex;
   flex-direction: column; 
   justify-content: center; 
   align-items: center;
   margin: 2%;
-  width : 100%;
+  width : 90%;
 }
 
 .new-tweet {

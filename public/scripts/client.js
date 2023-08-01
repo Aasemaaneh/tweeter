@@ -106,12 +106,9 @@ const createTweetElement = (tweet) => {
     loadTweets();  
     $(".new-tweet").on("submit", (event) => {
       event.preventDefault();
-      console.log("Here");
-      postTweet();
-    });
-    // Clear the error message when the user starts a new input in the tweet textarea
-    $("#tweet-text").on("input", () => {
       $(".error-message").empty().slideUp();
+      
+      postTweet();
     });
   });
   

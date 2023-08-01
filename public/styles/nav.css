@@ -1,3 +1,4 @@
+/* CSS for the navigation bar */
 nav {
   height: 120px;
   color: #FFFFFF;
@@ -5,29 +6,34 @@ nav {
   justify-content: space-between;
   padding: 0 1.5em;
   background-color: #ffae00b4;
-  background-image: url('path/to/your/image.png');
   background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999; 
 }
 
 nav span {
   font-family: 'Bungee', sans-serif;
-  font-size: 20px;
-  justify-content: space-between;
-}
-nav nav-content {
-  display: flex;
-  font-size: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 24px;
 }
 
+nav .nav-content {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+nav .nav-content span {
+  margin-right: 10px;
+}
 
 nav .fa-angle-double-down {
+  font-size: 24px;
   color: rgba(132, 6, 6, 0.945);
-  margin-top: 5px;
-  animation: fadeInOut 1s infinite; 
+  animation: fadeInOut 1s infinite;
 }
 
 @keyframes fadeInOut {

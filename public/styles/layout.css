@@ -14,7 +14,7 @@
  * Global layout stuff
  */
  main {
-  
+  padding-top: 120px;
   background-color: #f4f1ec;
   display: flex;
   flex-direction: column; /* Change flex-direction to column */
@@ -36,7 +36,7 @@ body {
 }
 
 
-@media only screen and (min-width: 768px)  { 
+@media only screen and (min-width: 1024px)  { 
  
   main {
     padding: 2%;
@@ -53,7 +53,7 @@ body {
     header {
       width: 33.3%;
       font-size: 24px;
-      margin-top: 1%;
+      margin-top: 5%;
       flex-direction: column;
       justify-content : center;
       align-items : center;
@@ -78,7 +78,7 @@ body {
     }
     nav {
       font-size:x-large;
-      background-color: #04256bb4 !important; 
+      background-color: #4056A1  !important; 
     }
     nav span {
       font-size: larger;
