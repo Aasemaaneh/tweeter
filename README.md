@@ -58,7 +58,7 @@ The server will start, and you can access the application by visiting http://loc
 
 - Compose and post tweets with a character limit.
 - View a feed of posted tweets.
-- Responsive design for various screen sizes.
+- Responsive design for wide screen sizes.
 
 ## Contributing
 
