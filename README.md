@@ -20,9 +20,13 @@ Tweeter is a simple, single-page Twitter clone.
 Tweeter is a fun project where students can practice their HTML, CSS, JS, jQuery, and AJAX front-end skills, as well as their Node.js and Express.js back-end skills. It allows users to compose short tweets and view them in a feed. The project provides a starting codebase that students can build upon and expand to create a fully functional Twitter-like application.
 
 ![Screenshot of the app](https://github.com/Aasemaaneh/tweeter/blob/2a3ce924ac1ad06fc2a723d4087346564c400127/doc/tweeter1.png)
+
 ![Screenshot of the app](https://github.com/Aasemaaneh/tweeter/blob/2a3ce924ac1ad06fc2a723d4087346564c400127/doc/tweeter2.png)
+
 ![Screenshot of the app](https://github.com/Aasemaaneh/tweeter/blob/2a3ce924ac1ad06fc2a723d4087346564c400127/doc/tweeter3.png)
+
 ![Screenshot of the app](https://github.com/Aasemaaneh/tweeter/blob/2a3ce924ac1ad06fc2a723d4087346564c400127/doc/tweeter4.png)
+
 ## Dependencies
 
 The following dependencies are required to run the Tweeter project:
