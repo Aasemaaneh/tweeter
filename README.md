@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-![Tweeter Screenshot](url-to-screenshot)
+[Screenshot of the app](https://github.com/Aasemaaneh/tweeter/blob/2a3ce924ac1ad06fc2a723d4087346564c400127/doc/tweeter4.png)
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ Tweeter is a fun project where students can practice their HTML, CSS, JS, jQuery
 
 - ![Screenshot of the app](https://github.com/Aasemaaneh/tweeter/blob/2a3ce924ac1ad06fc2a723d4087346564c400127/doc/tweeter3.png)
 
-- ![Screenshot of the app](https://github.com/Aasemaaneh/tweeter/blob/2a3ce924ac1ad06fc2a723d4087346564c400127/doc/tweeter4.png)
+
 
 ## Dependencies
 
