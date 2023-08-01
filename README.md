@@ -2,17 +2,59 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+![Tweeter Screenshot](url-to-screenshot)
 
-## Getting Started
+## Table of Contents
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+- [Introduction](#introduction)
+- [Dependencies](#dependencies)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Starting the Server](#starting-the-server)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+Tweeter is a fun project where students can practice their HTML, CSS, JS, jQuery, and AJAX front-end skills, as well as their Node.js and Express.js back-end skills. It allows users to compose short tweets and view them in a feed. The project provides a starting codebase that students can build upon and expand to create a fully functional Twitter-like application.
+
+![Tweeter Gif](url-to-gif)
 
 ## Dependencies
 
+The following dependencies are required to run the Tweeter project:
+
 - Express
-- Node 5.10.x or above
+- Node.js (version 5.10.x or above)
+- Ajax
+- Body-parser
+
+Make sure you have these dependencies installed on your system before running the project.
+
+## Getting Started
+
+To get started with the Tweeter project, follow the steps below:
+
+### Installation
+
+1. Fork and clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Install all the dependencies using "npm install" command.
+
+
+### Starting the Server
+
+After installing the dependencies, start the web server using "npm run local" command.
+The server will start, and you can access the application by visiting http://localhost:8080/ in your web browser.
+
+## Features
+
+- Compose and post tweets with a character limit.
+- View a feed of posted tweets.
+- Responsive design for various screen sizes.
+
+## Contributing
+
+Contributions to the Tweeter project are welcome! If you find any bugs or have suggestions for improvements, please create an issue or submit a pull request.
+

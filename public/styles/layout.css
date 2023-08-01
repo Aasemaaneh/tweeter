@@ -25,7 +25,7 @@
 
 body {
   display: flex;
-  color: #545149;
+  color: #000000;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
@@ -36,25 +36,59 @@ body {
 }
 
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-nav .logo {
-  font-family: 'Bungee', sans-serif;
-}
-
-.error {
-  color: red;
-  font-size: 14px;
-}
-
-
 @media only screen and (min-width: 768px)  { 
  
   main {
+    padding: 2%;
     margin-top: 8%;
     flex-direction: row; 
       
     }
+  .main-content {
+      
+      min-width: 66%;
+      max-width: 66%;
+     
+    }
+    header {
+      width: 33.3%;
+      font-size: 24px;
+      margin-top: 1%;
+      flex-direction: column;
+      justify-content : center;
+      align-items : center;
+      margin-left: 5%;
+    
+    }
   
+    header img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px; 
+    }
+  
+    header h2 {
+      text-align: center;
+    }
+  
+    .new-tweet {
+      margin-top: 0; 
+    }
+    nav {
+      font-size:x-large;
+      background-color: #04256bb4 !important; 
+    }
+    nav span {
+      font-size: larger;
+    }
+    nav nav-content {
+      
+      font-size: larger;
+    }
+    .error-message {
+  
+      font-size: xx-large;
+    }
 }

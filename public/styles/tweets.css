@@ -4,11 +4,10 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding: 0;
-  width: 80%;
+  min-width: 60%;
+  max-width: 80%;
+
 }
-
-
 .tweet {
   display: flex;
   flex-direction: column;
@@ -83,9 +82,9 @@
   margin-left: auto;
 }
 
-.tweet footer .icon-container i {
+tweet footer .icon-container .tweet-icon {
   margin-left: 10px;
-  color: #888;
+  color: #443a3a;
 }
 
 .tweet footer .timestamp {
@@ -97,10 +96,11 @@
 
 /* Hover styles for tweets */
 .tweet:hover {
-  box-shadow: 0 0 5px rgba(87, 122, 161, 0.3); /* Apply box shadow on hover */
+  box-shadow: 0 0 10px #0c255bb4; ; 
 }
 
-.tweet:hover footer .icon-container i {
-  color: #40a184; 
-
+.tweet footer .icon-container .tweet-icon:hover {
+  color: chocolate;
+  size: 89%;
 }
+

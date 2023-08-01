@@ -10,10 +10,11 @@ const createTweetElement = (tweet) => {
     const minutes = String(createdAtDate.getMinutes()).padStart(2, '0');
   
     // Create the time string in the format: yyyy-mm-dd hh:mm
-    const timestampString = `${year}-${month}-${day} ${hours}:${minutes}`;
     const currentTime = Date.now();
     const timeDifference = currentTime - tweet.created_at;
     const timeElapsed = calculateTimeElapsed(timeDifference);
+
+    //Create tweet element : 
     const article = $('<article class="tweet">');
      
     article.append(`<header>
@@ -27,12 +28,12 @@ const createTweetElement = (tweet) => {
             <p>${tweet.content.text}</p>
           </div>
           <footer>
-            <div class="icon-container">
-              <i class="far fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="far fa-heart"></i>
-            </div>
-            <span class="timestamp">${timeElapsed} ago</span> <!-- Add timestamp text -->
+          <div class="icon-container">
+            <i class="tweet-icon far fa-flag"></i>
+            <i class="tweet-icon fas fa-retweet"></i>
+            <i class="tweet-icon far fa-heart"></i>
+          </div>
+          <span class="timestamp">${timeElapsed} ago</span>
           </footer>
         </article>`);
   
@@ -63,16 +64,43 @@ const createTweetElement = (tweet) => {
   
   const postTweet = () => {
     const data = $("#tweet-text").serialize(); // Correct the selector to use # instead of .
-    //console.log(data);
-    // Hide the error message before validation
+  
+    // Hide any previous error message before validation
     $(".error-message").slideUp();
-    $.post("/tweets", data).then(() => {
-      loadTweets();
-    })
-    .catch((error)=>{// Show the error message with the appropriate error text
-        $(".error-message").text(error.responseJSON.error).slideDown();
+  
+    // Get the tweet text and trim any leading/trailing white spaces
+    const tweetText = $("#tweet-text").val().trim();
+  
+    // Validation: Check if tweet is empty
+    if (!tweetText) {
+      const errorMessage = "Tweet is empty. Please enter some text.";
+      showError(errorMessage);
+      return;
+    }
+  
+    // Validation: Check if tweet length exceeds 140 characters
+    if (tweetText.length > 140) {
+      const errorMessage = "The tweet is longer than 140 characters.";
+      showError(errorMessage);
+      return;
+    }
+  
+    // Your existing code to post the tweet
+    $.post("/tweets", data)
+      .then(() => {
+        loadTweets();
+        $("#tweet-text").val(""); // Clear the tweet textarea after successful submission
       });
   };
+  
+  //  Helper Function to show the error message
+  const showError = (message) => {
+    const $errorElement = $("<h2>").text(message);
+    const $errorMessage = $(".error-message");
+    $errorMessage.empty().append($errorElement);
+    $errorMessage.slideDown();
+  };
+  
   
   $(document).ready(() => {
     loadTweets();  
@@ -80,6 +108,10 @@ const createTweetElement = (tweet) => {
       event.preventDefault();
       console.log("Here");
       postTweet();
+    });
+    // Clear the error message when the user starts a new input in the tweet textarea
+    $("#tweet-text").on("input", () => {
+      $(".error-message").empty().slideUp();
     });
   });
   
